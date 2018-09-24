@@ -17,7 +17,7 @@ RUN chmod +x /opt/app/run.sh
 
 COPY etc/nginx/default.conf /etc/nginx/conf.d/
 
-COPY app/requirements.txt /opt/app/
+COPY requirements.txt /opt/app/
 RUN pip3 install --no-cache-dir -r /opt/app/requirements.txt
 
 COPY app /opt/app/
